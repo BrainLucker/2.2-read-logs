@@ -4,8 +4,11 @@ public class Main {
 
     long amount = 1000_60;
     boolean registered = true;
+    long expected = 30; // Ожидаемый результат
 
-    service.calculate(amount, registered);
+    long actual = service.calculate(amount, registered); // Фактический результат
+
+    System.out.println(expected == actual); // Вывод результата сравнения
   }
 }
 
